@@ -13,25 +13,27 @@ const Component = styled(Box)(({ theme }) => ({
 
 const Container = styled(Box)`
 padding: 12px 8px;
-text - align: center;
+text-align: center;
 `;
 const Text = styled(Typography)`
-font - size: 14px;
-font - weight: 600;
-font - family: inherit;
+font-size: 14px;
+font-weight: 600;
+font-family: inherit;
 `;
 
 const NavBar = () => {
   return (
-    <Component>
-      {
-        navData.map((data, index) => (
-          <Container key={index}>
-            <img src={data.url} alt="nav" style={{ width: 64 }} />
-            <Text>{data.text}</Text>
-          </Container>
-        ))}
-    </Component>
+    <Box style={{ background: '#fff' }}>
+      <Component>
+        {
+          navData.map((data, index) => (
+            <Container key={index}>
+              <img src={data.url} alt="nav" style={{ width: 64 }} />
+              <Text>{data.text}</Text>
+            </Container>
+          ))}
+      </Component>
+    </Box>
   );
 };
 export default NavBar;

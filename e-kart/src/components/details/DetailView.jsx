@@ -22,10 +22,10 @@ const Container = styled(Grid)(({ theme }) => ({
 }))
 
 const RightContainer = styled(Grid)`
-margin - top: 50px;
-padding - left: 25px;
+margin-top: 20px;
+padding-left: 25px;
 & > p {
-    margin - top: 10px;
+    margin-top: 20px;
 }
 `;
 
