@@ -1,5 +1,4 @@
-// server\routes\route.js
-
+//route.js
 import express from "express";
 
 import { userSignup, userLogin } from "../controller/user-controller.js";

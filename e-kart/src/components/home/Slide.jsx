@@ -48,7 +48,7 @@ const DealText = styled(Typography)`
     margin-right: 25px;
 `;
 
-const ViewAllButtoniewAllButton = styled(Button)`
+const ViewAllButton = styled(Button)`
     margin-left: auto;
     background: #2874f0;
     border-radius: 2px;
@@ -87,7 +87,7 @@ const Slide = ({ products, title, timer }) => {
                         />
                     </Timer>
                 }
-                <ViewAllButtoniewAllButton variant="contained">View All</ViewAllButtoniewAllButton>
+                <ViewAllButton variant="contained">View All</ViewAllButton>
             </Deal>
             <Divider />
             <Carousel
